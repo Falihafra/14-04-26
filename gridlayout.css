@@ -9,8 +9,8 @@
         "ads"
         "footer";
     grid-template-rows: auto auto 1fr auto auto;   
-    padding: 20px;
-    gap: 20px; 
+    padding: 100px;
+    gap: 10px; 
 }
 
 
@@ -34,7 +34,20 @@ footer {
     grid-area: footer;
     background-color: darkgray;
 }
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-areas: 
+           "header header header"
+           "nav content"
+           "ads ads"
+           "footer footer footer";
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
     .container {
         grid-template-areas: 
            "header header header"
@@ -45,3 +58,4 @@ footer {
     }
     
 }
+halo
